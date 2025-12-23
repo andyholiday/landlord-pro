@@ -84,8 +84,27 @@
 3. Ziehe **Landlord Pro** in den **Applications**-Ordner
 4. Starte die App aus dem Applications-Ordner
 
-> **Hinweis:** Beim ersten Start kann macOS eine Sicherheitswarnung anzeigen. 
-> Gehe zu **Systemeinstellungen → Datenschutz & Sicherheit** und klicke auf "Trotzdem öffnen".
+### ⚠️ Wichtig: Sicherheitswarnung beim ersten Start
+
+Da die App nicht signiert ist, zeigt macOS eine Warnung an: *"Landlord Pro.app kann nicht geöffnet werden"*
+
+**So öffnest du die App trotzdem:**
+
+#### Option 1: Rechtsklick-Methode (empfohlen)
+1. Klicke auf **"Fertig"** (nicht "In den Papierkorb legen"!)
+2. Gehe zu **Applications** und finde "Landlord Pro"
+3. **Rechtsklick** (oder Control + Klick) auf die App
+4. Wähle **"Öffnen"** aus dem Kontextmenü
+5. Klicke im Dialog auf **"Öffnen"**
+
+#### Option 2: Systemeinstellungen
+1. Öffne **Systemeinstellungen → Datenschutz & Sicherheit**
+2. Scrolle nach unten zu "Sicherheit"
+3. Du siehst: *"Landlord Pro wurde blockiert..."*
+4. Klicke auf **"Trotzdem öffnen"**
+5. Bestätige mit **"Öffnen"**
+
+> **Hinweis:** Dies muss nur einmal gemacht werden. Danach öffnet sich die App normal.
 
 ---
 

@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Sidebar.css'
+import logoImg from '/logo.png?url'
 
 interface NavItem {
     path: string
@@ -55,7 +56,7 @@ function Sidebar() {
     return (
         <nav className="sidebar">
             <div className="sidebar__logo">
-                <img src="/logo.png" alt="Landlord Pro" className="sidebar__logo-img" />
+                <img src={logoImg} alt="Landlord Pro" className="sidebar__logo-img" />
                 <span className="sidebar__logo-text">Landlord Pro</span>
             </div>
 
