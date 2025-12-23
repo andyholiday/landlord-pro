@@ -1,6 +1,6 @@
 {
   "name": "landlord-pro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Professionelle Mac-App zur Verwaltung und Abrechnung von Mietimmobilien",
   "main": "dist-electron/main.js",
   "scripts": {
