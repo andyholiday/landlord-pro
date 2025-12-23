@@ -43,6 +43,7 @@
     "vite-plugin-electron": "^0.28.8",
     "vite-plugin-electron-renderer": "^0.14.6"
   },
+  "author": "Landlord Pro Team",
   "build": {
     "appId": "com.landlordpro.app",
     "productName": "Landlord Pro",
@@ -52,13 +53,17 @@
     "mac": {
       "category": "public.app-category.business",
       "target": [
-        "dmg"
+        {
+          "target": "dmg",
+          "arch": [
+            "x64"
+          ]
+        }
       ],
-      "icon": "build/icon.icns"
+      "icon": "build/icon.png"
     },
     "dmg": {
-      "title": "Landlord Pro",
-      "icon": "build/icon.icns"
+      "title": "Landlord Pro"
     }
   }
 }
