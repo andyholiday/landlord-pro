@@ -17,6 +17,7 @@
 - [Features](#-features)
 - [Screenshots](#-screenshots)
 - [Installation](#-installation)
+- [Deinstallation](#️-deinstallation)
 - [Erste Schritte](#-erste-schritte)
 - [Funktionen im Detail](#-funktionen-im-detail)
 - [Entwicklung](#-entwicklung)
@@ -105,6 +106,46 @@ Da die App nicht signiert ist, zeigt macOS eine Warnung an: *"Landlord Pro.app k
 5. Bestätige mit **"Öffnen"**
 
 > **Hinweis:** Dies muss nur einmal gemacht werden. Danach öffnet sich die App normal.
+
+---
+
+## 🗑️ Deinstallation
+
+### Standard-Methode
+
+1. **Beende die App vollständig** (wichtig!)
+   - Klicke mit der rechten Maustaste auf das App-Icon im Dock
+   - Wähle **"Beenden"** (oder nutze `Cmd + Q`)
+2. Öffne den **Applications**-Ordner
+3. Ziehe **Landlord Pro** in den **Papierkorb**
+4. Optional: Leere den Papierkorb
+
+### ⚠️ Problemumgehung bei Fehlern
+
+Falls sich der Finder beim Löschen aufhängt (z.B. unsichtbares Icon am Cursor):
+
+1. Drücke mehrmals `Esc`, um den Drag-Vorgang abzubrechen
+2. Falls das nicht hilft: `Cmd + Option + Esc` → **Finder** → **Neu starten**
+3. Alternativ: Neustart des Macs mit `Ctrl + Cmd + Power`
+
+### 🧹 Saubere Deinstallation (Terminal)
+
+Für eine vollständige Deinstallation inkl. aller App-Daten:
+
+```bash
+# App beenden (falls noch offen)
+osascript -e 'quit app "Landlord Pro"'
+
+# App löschen
+rm -rf "/Applications/Landlord Pro.app"
+
+# App-Daten löschen (ACHTUNG: Löscht alle gespeicherten Daten!)
+rm -rf ~/Library/Application\ Support/landlord-pro
+rm -rf ~/Library/Preferences/com.landlord-pro.app.plist
+rm -rf ~/Library/Caches/com.landlord-pro.app
+```
+
+> **⚠️ Wichtig:** Das Löschen der App-Daten entfernt alle gespeicherten Immobilien, Mieter und Abrechnungen unwiderruflich! Erstelle vorher ein Backup über **Einstellungen → Backup erstellen**.
 
 ---
 
@@ -255,6 +296,11 @@ landlord-pro/
 ---
 
 ## 🗺️ Roadmap
+
+### Version 0.0.2
+- [ ] **Auto-Update-Prozess implementieren** (electron-updater)
+- [ ] In-App Update-Benachrichtigungen
+- [ ] Verbesserte Deinstallations-Hinweise in der App
 
 ### Version 0.1.0
 - [ ] PDF-Export für Nebenkostenabrechnungen

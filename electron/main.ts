@@ -208,6 +208,19 @@ app.on('activate', () => {
     }
 })
 
+// Cleanup handlers for proper resource release
+app.on('before-quit', () => {
+    // Ensure all IPC handlers are properly cleaned up
+    if (mainWindow) {
+        mainWindow.removeAllListeners()
+    }
+})
+
+app.on('will-quit', () => {
+    // Final cleanup before the app quits
+    mainWindow = null
+})
+
 // ==================== IPC Handlers ====================
 
 // Properties
