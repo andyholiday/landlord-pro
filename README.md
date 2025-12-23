@@ -72,7 +72,45 @@
 
 ## 📸 Screenshots
 
-*Screenshots werden demnächst hinzugefügt*
+### Dashboard
+Die Übersichtsseite zeigt alle wichtigen Kennzahlen auf einen Blick: Immobilien, Mieter, offene Aufgaben und Einnahmen.
+
+![Dashboard](docs/screenshots/01_dashboard.png)
+
+### Immobilienverwaltung
+Verwalte alle deine Immobilien an einem Ort – Mehrfamilienhäuser, Einfamilienhäuser und Eigentumswohnungen.
+
+![Immobilien](docs/screenshots/02_immobilien.png)
+
+### Neue Immobilie anlegen
+Erfasse alle relevanten Daten: Adresse, Gebäudedaten, Heizungsart und mehr.
+
+![Neue Immobilie](docs/screenshots/08_neue_immobilie.png)
+
+### Mieterverwaltung
+Alle Mieterdaten inklusive Vertrag, Kaution und Kontaktdaten übersichtlich verwalten.
+
+![Mieter](docs/screenshots/03_mieter.png)
+
+### Nebenkostenerfassung
+Erfasse alle Nebenkosten nach Kategorien mit verschiedenen Verteilerschlüsseln.
+
+![Nebenkosten](docs/screenshots/04_nebenkosten.png)
+
+### Nebenkostenabrechnung
+Der 6-Schritt-Wizard führt dich durch die komplette Abrechnung.
+
+![Abrechnung](docs/screenshots/05_abrechnung.png)
+
+### Instandhaltung
+Verwalte Reparaturen und Wartungsaufgaben mit Prioritäten und Kostenverfolgung.
+
+![Instandhaltung](docs/screenshots/06_instandhaltung.png)
+
+### Einstellungen
+Backup-Funktionen, Vermieter-Daten und Datenverwaltung.
+
+![Einstellungen](docs/screenshots/07_einstellungen.png)
 
 ---
 
