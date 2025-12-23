@@ -1,0 +1,111 @@
+/* Dashboard Styles */
+
+.dashboard__section {
+    margin-top: var(--space-xl);
+}
+
+.dashboard__section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.dashboard__section-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Stat Card Highlight */
+.stat-card--highlight {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, #5856d6 100%);
+    border: none;
+}
+
+.stat-card--highlight .stat-card__label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-card--highlight .stat-card__value {
+    color: white;
+}
+
+/* Quick Actions */
+.dashboard__quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.quick-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+.quick-action:hover {
+    background-color: var(--bg-tertiary);
+    transform: translateY(-2px);
+}
+
+.quick-action__icon {
+    font-size: 32px;
+}
+
+.quick-action__label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+}
+
+/* Property Card */
+.property-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.property-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.property-card__icon {
+    font-size: 24px;
+}
+
+.property-card__type {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    background-color: var(--bg-tertiary);
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+}
+
+.property-card__name {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-xs);
+}
+
+.property-card__address {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.property-card__stats {
+    display: flex;
+    gap: var(--space-md);
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}

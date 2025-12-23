@@ -1,0 +1,99 @@
+.settings-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 800px;
+}
+
+.settings-section__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.settings-section__icon {
+    font-size: 20px;
+}
+
+.settings-section__description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.settings-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.settings-section--danger {
+    border-color: var(--accent-danger);
+}
+
+.settings-section--danger .settings-section__title {
+    color: var(--accent-danger);
+}
+
+.settings-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+    background-color: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+}
+
+.settings-action__info {
+    flex: 1;
+    margin-right: var(--space-lg);
+}
+
+.settings-action__title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 4px;
+}
+
+.settings-action__description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.settings-action__buttons {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.settings-file-selected {
+    font-size: var(--font-size-sm);
+    color: var(--accent-primary);
+    padding-left: var(--space-md);
+}
+
+.settings-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.settings-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.settings-info-item__label {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+.settings-info-item__value {
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    word-break: break-all;
+}

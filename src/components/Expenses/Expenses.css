@@ -1,0 +1,90 @@
+/* Expenses Styles */
+
+.expense-filters {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-end;
+    margin-bottom: var(--space-lg);
+}
+
+.expense-filters>* {
+    width: 200px;
+}
+
+.expense-total {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.expense-total__label {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+.expense-total__value {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--accent-primary);
+}
+
+.expense-categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.expense-category__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.expense-category__name {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.expense-category__total {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--accent-primary);
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+}
+
+.expense-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.expense-item__vendor {
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+}
+
+.expense-item__date {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+.expense-item__amount {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
